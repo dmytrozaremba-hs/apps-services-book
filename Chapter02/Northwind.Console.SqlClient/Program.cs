@@ -33,7 +33,7 @@ WriteLine(); WriteLine();
 switch (key)
 {
     case ConsoleKey.D1 or ConsoleKey.NumPad1:
-        builder.DataSource = "WOODPECKER\\MSSQLSERVERDEV";
+        builder.DataSource = "(localdb)\\MSSQLLocalDB";
         break;
     case ConsoleKey.D2 or ConsoleKey.NumPad2:
         builder.DataSource =
