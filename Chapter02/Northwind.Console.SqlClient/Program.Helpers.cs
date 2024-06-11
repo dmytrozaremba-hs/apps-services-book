@@ -5,7 +5,7 @@ using System.Collections; // To use IDictionary.
 partial class Program
 {
     private static void ConfigureConsole(string culture = "en-US",
-   bool useComputerCulture = false)
+        bool useComputerCulture = false)
     {
         // To enable Unicode characters like Euro symbol in the console.
         OutputEncoding = System.Text.Encoding.UTF8;
@@ -32,7 +32,7 @@ partial class Program
             ];
 
         IDictionary statistics = connection.RetrieveStatistics();
-        
+
         foreach (object? key in statistics.Keys)
         {
             if (!includeKeys.Any() || includeKeys.Contains(key))
